@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="">
+        <menu>
+            <item
+                android:title="Clients"
+                android:id="@+id/clients"
+                android:icon="@drawable/clients"/>
+            <item android:title="Templates"
+                android:icon="@drawable/templates"
+                android:id="@+id/templates"/>
+            <item android:title="Manual"
+                android:icon="@drawable/manual"
+                android:id="@+id/manual"/>
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:title="Settings"
+                android:id="@+id/settings"
+                android:icon="@drawable/settingss"/>
+            <item android:title="About"
+                android:icon="@drawable/about"
+                android:id="@+id/about"/>
+        </menu>
+    </item>
+
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/exit"
+                android:icon="@drawable/backs"
+                android:title="EXIT" />
+        </menu>
+    </item>
+
+</menu>
