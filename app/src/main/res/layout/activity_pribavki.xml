@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".manual.PribavkiActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvTab1"
+                style="@style/buttons_manual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Таблица 1 -  Величины прибавок на толщину плечевых прокладок (подплечников)" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="114dp"
+                app:srcCompat="@drawable/tab1" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/buttons_manual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Таблица 2 – Рекомендуемые значения Пг для различных видов женской одежды" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                app:srcCompat="@drawable/tab2" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/buttons_manual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Таблица 3 – Типовое  распределение  Пг  по  участкам  чертежа  конструкции  женской одежды  " />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="match_parent"
+                android:layout_height="126dp"
+                app:srcCompat="@drawable/tab3" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/buttons_manual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Таблица 4 - Соотношение прибавок на свободное облегание в различных си- луэтах женской одежды  " />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                app:srcCompat="@drawable/tab4" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/buttons_manual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Таблица 5 – Рекомендуемые величины прибавок к обхвату плеча при конст- руировании втачных рукавов  " />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                app:srcCompat="@drawable/tab5" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/buttons_manual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Таблица 6 – Величины прибавок Пш. горл., Пв. горл., Пспр, Пдтс для раз- личных видов женской одежды " />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="match_parent"
+                android:layout_height="187dp"
+                app:srcCompat="@drawable/tab6" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

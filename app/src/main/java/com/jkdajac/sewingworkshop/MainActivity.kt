@@ -1,9 +1,11 @@
 package com.jkdajac.sewingworkshop
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.core.view.GravityCompat
+import com.jkdajac.sewingworkshop.manual.ManualActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +26,8 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this@MainActivity, "Templates", Toast.LENGTH_SHORT).show()
                 }
                 R.id.manual -> {
+                    val intent = Intent(this, ManualActivity ::class.java)
+                    startActivity(intent)
                     Toast.makeText(this@MainActivity, "Manual", Toast.LENGTH_SHORT).show()
                 }
                 R.id.settings -> {
@@ -39,5 +43,6 @@ class MainActivity : AppCompatActivity() {
             dlDrawer.closeDrawer(GravityCompat.START)
             true
         }
+        
     }
 }

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SewingWorkshop</string>
+    <string name="manual">MANUAL</string>
+    <string name="poriadok">Порядок снятия мерок</string>
+    <string name="rashod">Расход тканей на изделия</string>
+    <string name="defekti">Виды конструктивных дефектов</string>
+    <string name="formuli">Формулы расчета изделий</string>
+    <string name="pribavki">Прибавки на свободное облегание</string>
 </resources>
