@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#F6E4AC</color>
     <color name="hardOrange">#B19A52</color>
+    <color name="color_of_fragments">#F0E7BD</color>
 </resources>

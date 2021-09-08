@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".manual.DefektiActivity">
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/buttons" />
+
+    <TextView
+        android:id="@+id/tvDefektiKlasifikacia"
+        style="@style/buttons_manual"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:text="Классификация и характеристика дефектов в женской   одежде"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        app:srcCompat="@drawable/buttons" />
+
+    <TextView
+        android:id="@+id/tvDefectiSilueti"
+        style="@style/buttons_manual"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:text="Дефекты, вызванные неточностями воспроизведения силуэтной  формы изделия"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView17"
+        app:layout_constraintEnd_toEndOf="@+id/imageView17"
+        app:layout_constraintStart_toStartOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@drawable/buttons" />
+
+    <TextView
+        android:id="@+id/tvDefectiPlechi"
+        style="@style/buttons_manual"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:text="  Дефекты плечевой одежды"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+        app:layout_constraintEnd_toEndOf="@+id/imageView19"
+        app:layout_constraintStart_toStartOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19"
+        app:srcCompat="@drawable/buttons" />
+
+    <TextView
+        android:id="@+id/tvDefectiDvigenie"
+        style="@style/buttons_manual"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:text=" Дефекты одежды на фигуре при движении "
+        app:layout_constraintBottom_toBottomOf="@+id/imageView20"
+        app:layout_constraintEnd_toEndOf="@+id/imageView20"
+        app:layout_constraintStart_toStartOf="@+id/imageView20"
+        app:layout_constraintTop_toTopOf="@+id/imageView20" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20"
+        app:srcCompat="@drawable/buttons" />
+
+    <TextView
+        android:id="@+id/tvDefectiUbok"
+        style="@style/buttons_manual"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:text="Дефекты юбок и брюк и способы их устранения"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+        app:layout_constraintEnd_toEndOf="@+id/imageView21"
+        app:layout_constraintStart_toStartOf="@+id/imageView21"
+        app:layout_constraintTop_toTopOf="@+id/imageView21" />
+
+    <FrameLayout
+        android:id="@+id/flDefekti"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            app:srcCompat="@drawable/dress189" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

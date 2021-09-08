@@ -16,5 +16,10 @@ class ManualActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        tvDefekti.setOnClickListener {
+            val intent = Intent(this@ManualActivity, DefektiActivity :: class.java)
+            startActivity(intent)
+        }
+
     }
 }

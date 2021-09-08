@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_of_fragments"
+    tools:context="@string/DefektiKlasifikacia">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:padding="8dp"
+                android:text="@string/DefektiKlasifikacia"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/buttons_manual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:padding="8dp"
+                android:text="Таблица 1 – Места расположения и причины основных конструктивных дефектов в женской одежде  " />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="match_parent"
+                android:layout_height="536dp"
+                android:padding="8dp"
+                android:src="@drawable/image11" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
