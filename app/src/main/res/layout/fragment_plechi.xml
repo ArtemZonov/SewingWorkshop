@@ -29,11 +29,11 @@
             <TextView
                 android:id="@+id/textView12"
                 style="@style/buttons_manual"
-                android:padding="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="Рисунок 1 – Конструктивные дефекты «короткая спинка» и «длинный пе- ред»" />
+                android:padding="8dp"
+                android:text="Рисунок 1 – Конструктивные дефекты «короткая спинка» и «длинный перед»" />
 
             <ImageView
                 android:id="@+id/imageView15"
@@ -62,11 +62,11 @@
             <TextView
                 android:id="@+id/textView15"
                 style="@style/buttons_manual"
-                android:padding="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="Рисунок 2 – Конструктивные дефекты «Длинная спинка» и «короткий пе- ред» " />
+                android:padding="8dp"
+                android:text="Рисунок 2 – Конструктивные дефекты «Длинная спинка» и «короткий перед» " />
 
             <ImageView
                 android:id="@+id/imageView24"

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SewingWorkshop">
-        <activity android:name=".manual.MaidhrtjrtnrjnActivity"></activity>
+        <activity android:name=".manual.FormuliActivity"></activity>
+        <activity android:name=".manual.MerkiActivity" />
+        <activity android:name=".manual.MaidhrtjrtnrjnActivity" />
         <activity android:name=".manual.DefektiActivity" />
         <activity android:name=".manual.PribavkiActivity" />
         <activity android:name=".manual.ManualActivity" />

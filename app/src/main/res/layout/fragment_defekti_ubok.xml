@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_of_fragments"
+    tools:context=".manual.defekti_fragments.DefektiUbokFragment" >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView27"
+                style="@style/buttons_manual"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Таблица 1 – Конструктивные дефекты поясных изделий и способы их устранения  " />
+
+            <ImageView
+                android:id="@+id/imageView32"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:src="@drawable/image10" />
+
+            <ImageView
+                android:id="@+id/imageView33"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/image101" />
+
+            <ImageView
+                android:id="@+id/imageView34"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="278dp"
+                android:src="@drawable/image102" />
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="246dp"
+                android:src="@drawable/image103" />
+
+            <ImageView
+                android:id="@+id/imageView36"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="277dp"
+                android:src="@drawable/image104" />
+
+            <ImageView
+                android:id="@+id/imageView37"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="255dp"
+                android:src="@drawable/image105" />
+
+            <ImageView
+                android:id="@+id/imageView38"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="311dp"
+                android:src="@drawable/image106" />
+
+            <ImageView
+                android:id="@+id/imageView39"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="248dp"
+                android:src="@drawable/image107" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>
