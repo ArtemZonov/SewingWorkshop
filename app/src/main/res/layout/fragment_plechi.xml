@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_of_fragments"
+    tools:context=".manual.defekti_fragments.PlechiFragment" >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="@string/DefektiPlechi"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/buttons_manual"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Рисунок 1 – Конструктивные дефекты «короткая спинка» и «длинный пе- ред»" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="247dp"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/DefektiPlechi2"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/DefektiPlechi3"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView15"
+                style="@style/buttons_manual"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Рисунок 2 – Конструктивные дефекты «Длинная спинка» и «короткий пе- ред» " />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:src="@drawable/image2" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/DefektiPlechi4"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView17"
+                style="@style/buttons_manual"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Рисунок 3 \n  – Конструктивный дефект «передние детали расходятся  снизу» (слева)  \n – Наклонные складки по  окату рукава (справа) " />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image3" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:text="@string/DefektiPlechi5"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView19"
+                style="@style/buttons_manual"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Рисунок 4\n  – Направленное положение нижней части рукава (кручение  рукава) (слева)\n – Воротник отстает от шеи по всему периметру (справа) " />
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image4" />
+
+            <TextView
+                android:id="@+id/textView20"
+                style="@style/buttons_manual"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Рисунок 5\n  – Воротник отстает от шеи сзади (слева)\n – Воротник излишне плотно прилегает к шее (справа) " />
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image5" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/DefektiPlechi6"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView22"
+                style="@style/buttons_manual"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Рисунок 6 a,b\n  – Горизонтальные складки под воротником \n – Косые заломы на спинке под проймой   " />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image6" />
+
+            <TextView
+                android:id="@+id/textView23"
+                style="@style/buttons_manual"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Рисунок 7\n  – Наклонные заломы у проймы переда (слева)\n – Веерообразные заломы по линии талии (справа) " />
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image7" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

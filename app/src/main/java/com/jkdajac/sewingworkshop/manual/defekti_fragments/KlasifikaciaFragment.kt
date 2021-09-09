@@ -1,4 +1,4 @@
-package com.jkdajac.sewingworkshop.manual
+package com.jkdajac.sewingworkshop.manual.defekti_fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
