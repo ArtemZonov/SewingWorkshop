@@ -6,6 +6,7 @@
     <string name="defekti">Виды конструктивных дефектов</string>
     <string name="formuli">Формулы расчета изделий</string>
     <string name="pribavki">Прибавки на свободное облегание</string>
+    <string name="vichislit">Вычислить</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="DefektiKlasifikacia">
