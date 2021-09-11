@@ -21,5 +21,19 @@ class ManualActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        tvFormuli.setOnClickListener {
+            val intent = Intent(this@ManualActivity, FormuliActivity :: class.java)
+            startActivity(intent)
+        }
+        tvPoriadokSniatiaMerok.setOnClickListener {
+            val intent = Intent(this@ManualActivity, MerkiActivity :: class.java)
+            startActivity(intent)
+        }
+
+        tvRashodTkanei.setOnClickListener {
+            val intent = Intent(this@ManualActivity, RashodTkaneiActivity :: class.java)
+            startActivity(intent)
+        }
+
     }
 }
