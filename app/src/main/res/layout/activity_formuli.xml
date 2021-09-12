@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvUbkaSolnce" />
 
     <TextView
-        android:id="@+id/textView33"
+        android:id="@+id/tvUbkaKolokol"
         style="@style/buttons_manual"
         android:layout_width="160dp"
         android:layout_height="29dp"
@@ -48,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvFormuliUbkaKlin" />
 
     <TextView
-        android:id="@+id/textView35"
+        android:id="@+id/tvUbkaPolSolnce"
         style="@style/buttons_manual"
         android:layout_width="160dp"
         android:layout_height="29dp"
@@ -61,7 +61,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView36"
+        android:id="@+id/tvUbka3_4Solnce"
         style="@style/buttons_manual"
         android:layout_width="160dp"
         android:layout_height="29dp"
@@ -69,8 +69,8 @@
         android:background="@drawable/buttons"
         android:text="Юбка 3/4 солнца"
         app:layout_constraintBottom_toBottomOf="@+id/tvFormuliUbkaKlin"
-        app:layout_constraintEnd_toEndOf="@+id/textView35"
-        app:layout_constraintStart_toStartOf="@+id/textView35"
+        app:layout_constraintEnd_toEndOf="@+id/tvUbkaPolSolnce"
+        app:layout_constraintStart_toStartOf="@+id/tvUbkaPolSolnce"
         app:layout_constraintTop_toBottomOf="@+id/tvUbkaSolnce"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -81,11 +81,24 @@
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView33"
+        app:layout_constraintTop_toBottomOf="@+id/tvUbkaKolokol"
         app:layout_constraintVertical_bias="1.0">
 
     </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvVitochka"
+        style="@style/buttons_manual"
+        android:layout_width="0dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/buttons"
+        android:text="Нагрудная выточка"
+        app:layout_constraintBottom_toBottomOf="@+id/tvUbkaKolokol"
+        app:layout_constraintEnd_toEndOf="@+id/tvUbka3_4Solnce"
+        app:layout_constraintStart_toStartOf="@+id/tvUbka3_4Solnce"
+        app:layout_constraintTop_toBottomOf="@+id/tvFormuliUbkaKlin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

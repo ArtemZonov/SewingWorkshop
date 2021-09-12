@@ -5,28 +5,30 @@
     <item android:title="">
         <menu>
             <item
-                android:title="Clients"
                 android:id="@+id/clients"
-                android:icon="@drawable/clients"/>
-            <item android:title="Templates"
+                android:icon="@drawable/clients"
+                android:title="Клиенты" />
+            <item
+                android:id="@+id/templates"
                 android:icon="@drawable/templates"
-                android:id="@+id/templates"/>
+                android:title="Шаблоны" />
             <item
                 android:id="@+id/manual"
                 android:icon="@drawable/manual"
-                android:title="Manual" />
+                android:title="Справочник" />
         </menu>
     </item>
 
     <item android:title="">
         <menu>
             <item
-                android:title="Settings"
                 android:id="@+id/settings"
-                android:icon="@drawable/settingss"/>
-            <item android:title="About"
+                android:icon="@drawable/settingss"
+                android:title="Настройки" />
+            <item
+                android:id="@+id/about"
                 android:icon="@drawable/about"
-                android:id="@+id/about"/>
+                android:title="О приложении" />
         </menu>
     </item>
 
@@ -36,7 +38,7 @@
             <item
                 android:id="@+id/exit"
                 android:icon="@drawable/backs"
-                android:title="EXIT" />
+                android:title="ВЫХОД" />
         </menu>
     </item>
 
