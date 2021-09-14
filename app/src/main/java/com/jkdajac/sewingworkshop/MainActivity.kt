@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.core.view.GravityCompat
+import com.jkdajac.sewingworkshop.klients.KlientsActivity
 import com.jkdajac.sewingworkshop.manual.ManualActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -20,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         nvMenuNavigationView.setNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.clients -> {
+                    val intent = Intent(this, KlientsActivity ::class.java)
+                    startActivity(intent)
                     Toast.makeText(this@MainActivity, "Clients", Toast.LENGTH_SHORT).show()
                 }
                 R.id.templates -> {

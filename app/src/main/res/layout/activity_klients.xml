@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/ivBackKlients"
-        android:layout_width="71dp"
-        android:layout_height="29dp"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,11 +31,12 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/floatingNewKlient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/purple_700"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,5 +44,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@drawable/ic_add" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empty"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rvKlients"
+        app:layout_constraintEnd_toEndOf="@+id/rvKlients"
+        app:layout_constraintStart_toStartOf="@+id/rvKlients"
+        app:layout_constraintTop_toTopOf="@+id/rvKlients" />
 </androidx.constraintlayout.widget.ConstraintLayout>

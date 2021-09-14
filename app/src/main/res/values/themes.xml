@@ -52,5 +52,20 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <style name="Merki_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">80dp</item>
+    </style>
+
+    <style name="EditText_merki_style">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">80dp</item>
+    </style>
+
 
 </resources>
