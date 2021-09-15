@@ -1,12 +1,12 @@
-package com.jkdajac.sewingworkshop.klients
+package com.jkdajac.sewingworkshop.clients
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.jkdajac.sewingworkshop.R
 
-class KlientsActivity : AppCompatActivity() {
+class EditActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_klients)
+        setContentView(R.layout.activity_edit)
     }
 }
