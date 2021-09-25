@@ -5,14 +5,20 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.core.view.GravityCompat
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.jkdajac.sewingworkshop.clients.ClientsActivity
+import com.jkdajac.sewingworkshop.clients.ClientsAdapter
+import com.jkdajac.sewingworkshop.clients.database.MyDbManager
 import com.jkdajac.sewingworkshop.manual.ManualActivity
+import kotlinx.android.synthetic.main.activity_clients.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
      ivMenuOpen.setOnClickListener {
             dlDrawer.openDrawer(GravityCompat.START)
@@ -46,6 +52,9 @@ class MainActivity : AppCompatActivity() {
             dlDrawer.closeDrawer(GravityCompat.START)
             true
         }
+
         
     }
+
+
 }

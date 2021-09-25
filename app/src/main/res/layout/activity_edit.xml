@@ -8,7 +8,7 @@
     tools:context=".clients.EditActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName36"
+        android:id="@+id/etSHn"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName35"
+        android:id="@+id/etSHk"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
@@ -30,7 +30,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName34"
+        android:id="@+id/etDt_k"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
@@ -41,7 +41,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName33"
+        android:id="@+id/etObed"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
@@ -52,7 +52,7 @@
         app:layout_constraintVertical_bias="0.9" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName32"
+        android:id="@+id/etVs"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
@@ -63,7 +63,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName30"
+        android:id="@+id/etDb"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
@@ -74,7 +74,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName29"
+        android:id="@+id/etDzz"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
@@ -85,7 +85,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName28"
+        android:id="@+id/etDzb"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
@@ -96,7 +96,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName27"
+        android:id="@+id/etDsp"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
@@ -107,7 +107,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName26"
+        android:id="@+id/etDub"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
@@ -118,7 +118,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName25"
+        android:id="@+id/etOzap"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
@@ -129,7 +129,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName9"
+        android:id="@+id/etOr"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
@@ -140,7 +140,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName8"
+        android:id="@+id/etDr"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
@@ -151,7 +151,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/etVprz"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
@@ -162,7 +162,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/etVpks"
        style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
@@ -173,7 +173,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName23"
+        android:id="@+id/etCg"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:inputType="textPersonName"
@@ -183,7 +183,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName22"
+        android:id="@+id/etVg"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:inputType="textPersonName"
@@ -193,7 +193,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName21"
+        android:id="@+id/etDts"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:inputType="textPersonName"
@@ -203,7 +203,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName20"
+        android:id="@+id/etDtp"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:inputType="textPersonName"
@@ -213,7 +213,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName19"
+        android:id="@+id/etSHp"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:inputType="textPersonName"
@@ -223,7 +223,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName18"
+        android:id="@+id/etSHs"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:inputType="textPersonName"
@@ -233,7 +233,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName17"
+        android:id="@+id/etSHg2"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:inputType="textPersonName"
@@ -243,7 +243,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName16"
+        android:id="@+id/etSHg"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:inputType="textPersonName"
@@ -253,7 +253,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName15"
+        android:id="@+id/etDt_b"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:inputType="textPersonName"
@@ -263,7 +263,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName14"
+        android:id="@+id/etOb"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:inputType="textPersonName"
@@ -273,7 +273,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName13"
+        android:id="@+id/etOta"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:inputType="textPersonName"
@@ -292,7 +292,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView47" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName12"
+        android:id="@+id/etOg3"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:inputType="textPersonName"
@@ -311,7 +311,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView49" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName11"
+        android:id="@+id/etOg2"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:inputType="textPersonName"
@@ -321,7 +321,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName10"
+        android:id="@+id/etOg1"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:inputType="textPersonName"
@@ -340,7 +340,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView48" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/etName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -356,7 +356,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/etLastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:drawable/editbox_background"
@@ -364,13 +364,13 @@
         android:hint="Фамилия"
         android:inputType="textPersonName"
         android:padding="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etName"
         app:layout_constraintHorizontal_bias="0.89"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintStart_toStartOf="@+id/etName"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/etPhoneNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:drawable/editbox_background"
@@ -379,9 +379,9 @@
         android:inputType="phone"
         android:padding="10dp"
         android:phoneNumber="true"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintEnd_toEndOf="@+id/etLastName"
+        app:layout_constraintStart_toStartOf="@+id/etLastName"
+        app:layout_constraintTop_toBottomOf="@+id/etLastName" />
 
     <TextView
         android:id="@+id/textView41"
@@ -393,7 +393,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/etPhoneNumber" />
 
     <TextView
         android:id="@+id/textView43"
@@ -417,7 +417,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView43" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/etDis"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:inputType="textPersonName"
@@ -428,7 +428,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/etOsh"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:inputType="textPersonName"
@@ -531,7 +531,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView57" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName24"
+        android:id="@+id/etDescription"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
@@ -555,7 +555,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView58" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/etVpkp"
         style="@style/EditText_merki_style"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
@@ -578,7 +578,6 @@
     <TextView
         android:id="@+id/textView60"
         style="@style/Merki_style"
-        android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:text="Впрз"
         app:layout_constraintEnd_toEndOf="@+id/textView54"
@@ -615,7 +614,7 @@
         android:layout_marginStart="8dp"
         android:text="Дюб"
         app:layout_constraintBottom_toBottomOf="@+id/textView54"
-        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName19"
+        app:layout_constraintStart_toEndOf="@+id/etSHp"
         app:layout_constraintTop_toTopOf="@+id/textView54"
         app:layout_constraintVertical_bias="1.0" />
 
@@ -624,7 +623,7 @@
         style="@style/Merki_style"
         android:layout_marginTop="4dp"
         android:text="Дсп"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName26"
+        app:layout_constraintEnd_toStartOf="@+id/etDub"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView64"
         app:layout_constraintTop_toBottomOf="@+id/textView64" />
@@ -633,7 +632,7 @@
         android:id="@+id/textView66"
         style="@style/Merki_style"
         android:text="Дзб"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName26"
+        app:layout_constraintEnd_toStartOf="@+id/etDub"
         app:layout_constraintStart_toStartOf="@+id/textView64"
         app:layout_constraintTop_toBottomOf="@+id/textView65" />
 
@@ -641,7 +640,7 @@
         android:id="@+id/textView67"
         style="@style/Merki_style"
         android:text="Дзз"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName26"
+        app:layout_constraintEnd_toStartOf="@+id/etDub"
         app:layout_constraintStart_toStartOf="@+id/textView64"
         app:layout_constraintTop_toBottomOf="@+id/textView66" />
 
@@ -649,7 +648,7 @@
         android:id="@+id/textView68"
         style="@style/Merki_style"
         android:text="Дб"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName26"
+        app:layout_constraintEnd_toStartOf="@+id/etDub"
         app:layout_constraintStart_toStartOf="@+id/textView64"
         app:layout_constraintTop_toBottomOf="@+id/textView67" />
 
@@ -657,7 +656,7 @@
         android:id="@+id/textView69"
         style="@style/Merki_style"
         android:text="Вс"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName26"
+        app:layout_constraintEnd_toStartOf="@+id/etDub"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView64"
         app:layout_constraintTop_toBottomOf="@+id/textView68" />
@@ -666,7 +665,7 @@
         android:id="@+id/textView70"
         style="@style/Merki_style"
         android:text="Обед"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName26"
+        app:layout_constraintEnd_toStartOf="@+id/etDub"
         app:layout_constraintStart_toStartOf="@+id/textView64"
         app:layout_constraintTop_toBottomOf="@+id/textView69" />
 
@@ -674,7 +673,7 @@
         android:id="@+id/textView71"
         style="@style/Merki_style"
         android:text="Дт-к"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName26"
+        app:layout_constraintEnd_toStartOf="@+id/etDub"
         app:layout_constraintStart_toStartOf="@+id/textView64"
         app:layout_constraintTop_toBottomOf="@+id/textView70" />
 
@@ -682,7 +681,7 @@
         android:id="@+id/textView72"
         style="@style/Merki_style"
         android:text="Шк"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName26"
+        app:layout_constraintEnd_toStartOf="@+id/etDub"
         app:layout_constraintStart_toStartOf="@+id/textView64"
         app:layout_constraintTop_toBottomOf="@+id/textView71" />
 
@@ -690,7 +689,7 @@
         android:id="@+id/textView73"
         style="@style/Merki_style"
         android:text="Шн"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName26"
+        app:layout_constraintEnd_toStartOf="@+id/etDub"
         app:layout_constraintStart_toStartOf="@+id/textView64"
         app:layout_constraintTop_toBottomOf="@+id/textView72" />
 
@@ -741,5 +740,17 @@
         app:layout_constraintStart_toStartOf="@+id/imageView51"
         app:layout_constraintTop_toTopOf="@+id/imageView51"
         app:srcCompat="@drawable/ic_camera" />
+
+    <ImageView
+        android:id="@+id/ivSaveData"
+        android:layout_width="157dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/etName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_save" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
