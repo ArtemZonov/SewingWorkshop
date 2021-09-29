@@ -3,65 +3,84 @@ package com.jkdajac.sewingworkshop.clients
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.jkdajac.sewingworkshop.MainActivity
 import com.jkdajac.sewingworkshop.R
-import com.jkdajac.sewingworkshop.clients.database.MyDbManager
-import com.jkdajac.sewingworkshop.clients.database.MyIntentConstants
+import com.jkdajac.sewingworkshop.clients.database.AppDatabase
+import com.jkdajac.sewingworkshop.clients.database.Field
+import com.jkdajac.sewingworkshop.clients.database.FieldAdapter
 import kotlinx.android.synthetic.main.activity_clients.*
-import kotlinx.android.synthetic.main.activity_edit.*
+import kotlinx.android.synthetic.main.field_item.*
 
-class ClientsActivity : AppCompatActivity() {
 
-    val clientsAdapter = ClientsAdapter(ArrayList(), this)
-    //val myDbManager = MyDbManager(this)
+class ClientsActivity : AppCompatActivity(), FieldAdapter.ViewHolder.ItemCallback {
+
+    lateinit var adapter: FieldAdapter
+    lateinit var fieldDatabase: AppDatabase
+     lateinit var fieldList: ArrayList<Field>
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_clients)
 
+         fieldList = ArrayList<Field>()
+        fieldDatabase = AppDatabase.getDatabase(this)
+        getData()
+        adapter = FieldAdapter(this, fieldList, this)
+        rvKlients.layoutManager = LinearLayoutManager(this)
+        rvKlients.adapter = adapter
+
         floatingNewKlient.setOnClickListener {
-            val intent = Intent(this, EditActivity ::class.java)
+            val intent = Intent(this, EditActivity::class.java)
             startActivity(intent)
         }
         ivBackKlients.setOnClickListener {
-            val intent = Intent(this, MainActivity ::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
         }
-
-            init()
-             getMyIntents()
-
-    }
-    override fun onDestroy() {
-        super.onDestroy()
-        MyDbManager(this).closeDb()
     }
 
-    override fun onResume() {
-        super.onResume()
-        MyDbManager(this).openDb()
-       fillAdapter()
-   }
+     override fun deleteItem(index: Int) {
+        val field = fieldList.get(index)
+        fieldDatabase.fieldDao().deleteField(field)
+        getData()
+       adapter.notifyDataSetChanged()
 
-
-    fun init(){
-        rvKlients.adapter = clientsAdapter
-        rvKlients.layoutManager = LinearLayoutManager(this)
     }
 
-    fun fillAdapter(){
-        clientsAdapter.updateAdapter(MyDbManager(this).readDbData())
-    }
+  // override fun editItem(index: Int) {
 
-    fun getMyIntents(){
-        val i = intent
-        if(i.getStringExtra(MyIntentConstants.I_NAME_KEY) != null)
+        //val inflater = LayoutInflater.from(this)
+        //val v = inflater.inflate(R.layout.update_field, null)
+        //val title = v.findViewById<EditText>(R.id.etTitleUpdate)
+        //val description = v.findViewById<EditText>(R.id.etDescriptionUpdate)
 
-            etName.setText(i.getStringExtra(MyIntentConstants.I_NAME_KEY))
-            etLastName.setText(i.getStringExtra(MyIntentConstants.I_LASTNAME_KEY))
-            etPhoneNumber.setText(i.getStringExtra(MyIntentConstants.I_PHONENUMBER_KEY))
-            etDescription.setText(i.getStringExtra(MyIntentConstants.I_DESCRIPTION_KEY))
+//        val addDialog = AlertDialog.Builder(this)
+//        addDialog
+//            .setView(v)
+//            .setPositiveButton("Ok") { dialog, _ ->
+//                val note = notesList.get(index)
+//                note.title = title.text.toString()
+//                note.description = description.text.toString()
+//                noteDatabase.noteDao().updateNote(note)
+//                getData()
+//                adapter.notifyDataSetChanged()
+//                Toast.makeText(this, "User Information is Edited", Toast.LENGTH_SHORT).show()
+//                dialog.dismiss()
+//
+//            }
+//            .setNegativeButton("Cancel") { dialog, _ ->
+//                dialog.dismiss()
+//            }
+//            .create()
+//            .show()
+    //}
+    fun getData() {
+        val fieldFromDb: List<Field> = fieldDatabase.fieldDao().getAll()
+        fieldList.clear()
+        fieldList.addAll(fieldFromDb)
     }
-}
+    }

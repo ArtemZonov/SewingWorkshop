@@ -46,16 +46,4 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_add" />
 
-    <TextView
-        android:id="@+id/tvEmpty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Empty"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/rvKlients"
-        app:layout_constraintEnd_toEndOf="@+id/rvKlients"
-        app:layout_constraintStart_toStartOf="@+id/rvKlients"
-        app:layout_constraintTop_toTopOf="@+id/rvKlients" />
 </androidx.constraintlayout.widget.ConstraintLayout>
