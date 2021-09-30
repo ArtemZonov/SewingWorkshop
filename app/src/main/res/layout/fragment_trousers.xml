@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tamplates.TrousersFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_of_fragments">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView69"
+                    android:layout_width="match_parent"
+                    android:layout_height="395dp"
+                    android:src="@drawable/photo26" />
+
+                <ImageView
+                    android:id="@+id/imageView70"
+                    android:layout_width="match_parent"
+                    android:layout_height="398dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/photo25" />
+
+                <ImageView
+                    android:id="@+id/imageView71"
+                    android:layout_width="match_parent"
+                    android:layout_height="594dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/photo30" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

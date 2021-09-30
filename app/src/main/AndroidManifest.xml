@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SewingWorkshop">
+        <activity android:name=".tamplates.TamplatesActivity"></activity>
+        <activity android:name=".about.AboutActivity" />
         <activity android:name=".clients.EditActivity" />
         <activity android:name=".clients.ClientsActivity" />
         <activity android:name=".manual.RashodTkaneiActivity" />

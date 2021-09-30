@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tamplates.DressFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_of_fragments">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView52"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/photo12" />
+
+                <ImageView
+                    android:id="@+id/imageView53"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/photo11" />
+
+                <ImageView
+                    android:id="@+id/imageView54"
+                    android:layout_width="match_parent"
+                    android:layout_height="602dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/photo9" />
+
+                <ImageView
+                    android:id="@+id/imageView55"
+                    android:layout_width="match_parent"
+                    android:layout_height="494dp"
+                    android:src="@drawable/photo7" />
+
+                <ImageView
+                    android:id="@+id/imageView56"
+                    android:layout_width="match_parent"
+                    android:layout_height="422dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/photo5" />
+
+                <ImageView
+                    android:id="@+id/imageView57"
+                    android:layout_width="match_parent"
+                    android:layout_height="558dp"
+                    android:src="@drawable/photo13" />
+
+                <ImageView
+                    android:id="@+id/imageView58"
+                    android:layout_width="match_parent"
+                    android:layout_height="533dp"
+                    android:src="@drawable/photo15" />
+
+                <ImageView
+                    android:id="@+id/imageView59"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/photo16" />
+
+                <ImageView
+                    android:id="@+id/imageView60"
+                    android:layout_width="match_parent"
+                    android:layout_height="428dp"
+                    android:src="@drawable/photo17" />
+
+                <ImageView
+                    android:id="@+id/imageView61"
+                    android:layout_width="match_parent"
+                    android:layout_height="261dp"
+                    android:src="@drawable/photo18" />
+
+                <ImageView
+                    android:id="@+id/imageView62"
+                    android:layout_width="match_parent"
+                    android:layout_height="319dp"
+                    android:src="@drawable/photo19" />
+
+                <ImageView
+                    android:id="@+id/imageView63"
+                    android:layout_width="match_parent"
+                    android:layout_height="511dp"
+                    android:src="@drawable/photo20" />
+
+                <ImageView
+                    android:id="@+id/imageView64"
+                    android:layout_width="match_parent"
+                    android:layout_height="299dp"
+                    android:src="@drawable/photo21" />
+
+                <ImageView
+                    android:id="@+id/imageView65"
+                    android:layout_width="match_parent"
+                    android:layout_height="310dp"
+                    android:src="@drawable/photo27" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

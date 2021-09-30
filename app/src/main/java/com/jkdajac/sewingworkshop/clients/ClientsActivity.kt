@@ -11,21 +11,21 @@ import com.jkdajac.sewingworkshop.clients.database.AppDatabase
 import com.jkdajac.sewingworkshop.clients.database.Field
 import com.jkdajac.sewingworkshop.clients.database.FieldAdapter
 import kotlinx.android.synthetic.main.activity_clients.*
-import kotlinx.android.synthetic.main.field_item.*
+
 
 
 class ClientsActivity : AppCompatActivity(), FieldAdapter.ViewHolder.ItemCallback {
 
     lateinit var adapter: FieldAdapter
     lateinit var fieldDatabase: AppDatabase
-     lateinit var fieldList: ArrayList<Field>
+    lateinit var fieldList: ArrayList<Field>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_clients)
 
-         fieldList = ArrayList<Field>()
+        fieldList = ArrayList<Field>()
         fieldDatabase = AppDatabase.getDatabase(this)
         getData()
         adapter = FieldAdapter(this, fieldList, this)
@@ -43,15 +43,16 @@ class ClientsActivity : AppCompatActivity(), FieldAdapter.ViewHolder.ItemCallbac
         }
     }
 
-     override fun deleteItem(index: Int) {
+    override fun deleteItem(index: Int) {
         val field = fieldList.get(index)
         fieldDatabase.fieldDao().deleteField(field)
         getData()
-       adapter.notifyDataSetChanged()
+        adapter.notifyDataSetChanged()
 
     }
 
-  // override fun editItem(index: Int) {
+    override fun editItem(index: Int) {
+
 
         //val inflater = LayoutInflater.from(this)
         //val v = inflater.inflate(R.layout.update_field, null)
@@ -77,10 +78,12 @@ class ClientsActivity : AppCompatActivity(), FieldAdapter.ViewHolder.ItemCallbac
 //            }
 //            .create()
 //            .show()
-    //}
+    }
+
     fun getData() {
         val fieldFromDb: List<Field> = fieldDatabase.fieldDao().getAll()
         fieldList.clear()
         fieldList.addAll(fieldFromDb)
     }
-    }
+}
+

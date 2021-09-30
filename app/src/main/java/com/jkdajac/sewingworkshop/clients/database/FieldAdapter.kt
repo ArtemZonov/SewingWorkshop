@@ -29,9 +29,9 @@ class FieldAdapter(
         holder.deleteItem?.setOnClickListener {
             callback.deleteItem(position)
         }
-//        holder.editItem?.setOnClickListener {
-//            callback.editItem(position)
-//        }
+        holder.editItem?.setOnClickListener {
+            callback.editItem(position)
+        }
     }
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var name: TextView? = null
@@ -47,12 +47,12 @@ class FieldAdapter(
             lastname = itemView.tvItemLastname
             phonenumber = itemView.etPhoneNumber
             deleteItem = itemView.ivItemDelete
-            deleteItem = itemView.ivItemEdit
+            editItem = itemView.ivItemEdit
         }
 
         interface ItemCallback {
             fun deleteItem(index: Int)
-            //fun editItem(index: Int)
+            fun editItem(index: Int)
         }
     }
     override fun getItemCount(): Int {

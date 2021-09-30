@@ -134,9 +134,8 @@
 
         <ImageView
             android:id="@+id/imageView22"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="50dp"
-            app:srcCompat="@drawable/dress189" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dressdefekti" />
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
