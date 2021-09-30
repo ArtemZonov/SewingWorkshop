@@ -1,9 +1,11 @@
 package com.jkdajac.sewingworkshop.clients
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.widget.EditText
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.jkdajac.sewingworkshop.MainActivity
 import com.jkdajac.sewingworkshop.R
@@ -51,13 +53,20 @@ class ClientsActivity : AppCompatActivity(), FieldAdapter.ViewHolder.ItemCallbac
 
     }
 
+    @SuppressLint("InflateParams")
     override fun editItem(index: Int) {
 
+       val inflater = LayoutInflater.from(this)
+        val v = inflater.inflate(R.layout.activity_edit, null)
+        val name = v.findViewById<EditText>(R.id.etName)
+        val lastname = v.findViewById<EditText>(R.id.etLastName)
+        val field = fieldList.get(index)
+        field.name = name.text.toString()
+        field.lastname = lastname.text.toString()
+        fieldDatabase.fieldDao().updateField(field)
+        getData()
+        adapter.notifyDataSetChanged()
 
-        //val inflater = LayoutInflater.from(this)
-        //val v = inflater.inflate(R.layout.update_field, null)
-        //val title = v.findViewById<EditText>(R.id.etTitleUpdate)
-        //val description = v.findViewById<EditText>(R.id.etDescriptionUpdate)
 
 //        val addDialog = AlertDialog.Builder(this)
 //        addDialog

@@ -5,8 +5,8 @@ import androidx.room.PrimaryKey
 
 @Entity
 class Field (
-    val name : String,
-    val lastname : String,
+    var name : String,
+    var lastname : String,
     val phonenumber : String,
     val description : String
         )
