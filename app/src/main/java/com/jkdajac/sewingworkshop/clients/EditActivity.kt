@@ -7,6 +7,7 @@ import android.widget.Toast
 import com.jkdajac.sewingworkshop.R
 import com.jkdajac.sewingworkshop.clients.database.AppDatabase
 import com.jkdajac.sewingworkshop.clients.database.Field
+import com.jkdajac.sewingworkshop.clients.database.MyIntentConstants
 import kotlinx.android.synthetic.main.activity_edit.*
 import java.util.*
 
@@ -18,6 +19,7 @@ class EditActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit)
+        getMyIntents()
 
         fieldDatabase = AppDatabase.getDatabase(this)
 
@@ -40,7 +42,19 @@ class EditActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this,"Заполните все поля", Toast.LENGTH_LONG).show()
             }
+            finish()
         }
 
         }
+    fun getMyIntents(){
+
+        val i = intent
+
+        if(i != null){
+            if(i.getStringExtra(MyIntentConstants.I_NAME_KEY) != null){
+                etName.setText(i.getStringExtra(MyIntentConstants.I_NAME_KEY))
+            }
+        }
+    }
+
     }
