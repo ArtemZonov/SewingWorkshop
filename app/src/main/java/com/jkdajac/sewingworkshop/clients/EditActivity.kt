@@ -65,7 +65,7 @@ class EditActivity : AppCompatActivity() {
 
 
 
-                val field: Field =
+                val field =
                     Field(name = name, lastname = lastname, phonenumber = phonenumber, description = description,
                     etDis = etDis, etOsh = etOsh, etOg1 = etOg1, etOg2 = etOg2, etOg3 = etOg3, etOta = etOta, etOb = etOb,
                     etDt_b = etDt_b, etSHg = etSHg, etSHg2 = etSHg2, etSHs = etSHs, etSHp = etSHp,
@@ -73,12 +73,12 @@ class EditActivity : AppCompatActivity() {
                     etVprz = etVprz, etDr = etDr, etOr = etOr, etOzap = etOzap, etDub = etDub, etDsp = etDsp,
                     etDzb = etDzb, etDzz = etDzz, etDb = etDb, etVs = etVs, etObed = etObed, etDt_k = etDt_k,
                     etSHk = etSHk, etSHn = etSHn)
-                Toast.makeText(this,"field", Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Имя и фамилия заполнены!", Toast.LENGTH_LONG).show()
                 fieldDatabase.fieldDao().insertField(field)
                 val intent = Intent(this, ClientsActivity::class.java)
                 startActivity(intent)
             } else {
-                Toast.makeText(this,"Заполните все поля", Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Заполните поля" + "\"Имя\"" + "и" + "\"Фамилия\"", Toast.LENGTH_LONG).show()
             }
             finish()
         }
@@ -94,11 +94,39 @@ class EditActivity : AppCompatActivity() {
                 etLastName.setText(i.getStringExtra(MyIntentConstants.I_LASTNAME_KEY))
                 etPhoneNumber.setText(i.getStringExtra(MyIntentConstants.I_PHONENUMBER_KEY))
                 etDescription.setText(i.getStringExtra(MyIntentConstants.I_DESCRIPTION_KEY))
+                etDis.setText(i.getStringExtra(MyIntentConstants.I_ETDIS_KEY))
+                etOsh.setText(i.getStringExtra(MyIntentConstants.I_ETOSH_KEY))
+                etOg1.setText(i.getStringExtra(MyIntentConstants.I_ETOG1_KEY))
+                etOg2.setText(i.getStringExtra(MyIntentConstants.I_ETOG2_KEY))
+                etOg3.setText(i.getStringExtra(MyIntentConstants.I_ETOG3_KEY))
+                etOta.setText(i.getStringExtra(MyIntentConstants.I_ETOTA_KEY))
+                etOb.setText(i.getStringExtra(MyIntentConstants.I_ETOB_KEY))
+                etDt_b.setText(i.getStringExtra(MyIntentConstants.I_ETDT_B_KEY))
+                etSHg.setText(i.getStringExtra(MyIntentConstants.I_ETSHG_KEY))
+                etSHg2.setText(i.getStringExtra(MyIntentConstants.I_ETSHG2_KEY))
+                etSHs.setText(i.getStringExtra(MyIntentConstants.I_ETSHS_KEY))
+                etSHp.setText(i.getStringExtra(MyIntentConstants.I_ETSHP_KEY))
+                etDtp.setText(i.getStringExtra(MyIntentConstants.I_ETDTP_KEY))
+                etDts.setText(i.getStringExtra(MyIntentConstants.I_ETDTS_KEY))
+                etVg.setText(i.getStringExtra(MyIntentConstants.I_ETVG_KEY))
+                etCg.setText(i.getStringExtra(MyIntentConstants.I_ETCG_KEY))
+                etVpkp.setText(i.getStringExtra(MyIntentConstants.I_ETVPKP_KEY))
+                etVpks.setText(i.getStringExtra(MyIntentConstants.I_ETVPKS_KEY))
+                etVprz.setText(i.getStringExtra(MyIntentConstants.I_ETVPRZ_KEY))
+                etDr.setText(i.getStringExtra(MyIntentConstants.I_ETDR_KEY))
+                etOr.setText(i.getStringExtra(MyIntentConstants.I_ETOR_KEY))
+                etOzap.setText(i.getStringExtra(MyIntentConstants.I_ETOZAP_KEY))
+                etDub.setText(i.getStringExtra(MyIntentConstants.I_ETDUB_KEY))
+                etDsp.setText(i.getStringExtra(MyIntentConstants.I_ETDSP_KEY))
+                etDzb.setText(i.getStringExtra(MyIntentConstants.I_ETDZB_KEY))
+                etDzz.setText(i.getStringExtra(MyIntentConstants.I_ETDZZ_KEY))
+                etDb.setText(i.getStringExtra(MyIntentConstants.I_ETDB_KEY))
+                etVs.setText(i.getStringExtra(MyIntentConstants.I_ETVS_KEY))
+                etObed.setText(i.getStringExtra(MyIntentConstants.I_ETOBED_KEY))
+                etDt_k.setText(i.getStringExtra(MyIntentConstants.I_ETDT_K_KEY))
+                etSHk.setText(i.getStringExtra(MyIntentConstants.I_ETSHK_KEY))
+                etSHn.setText(i.getStringExtra(MyIntentConstants.I_ETSHN_KEY))
             }
-//            if(i.getStringExtra(MyIntentConstants.I_LASTNAME_KEY) != null){
-//                etName.setText(i.getStringExtra(MyIntentConstants.I_NAME_KEY))
-//            }
-
         }
     }
 
