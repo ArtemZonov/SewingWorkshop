@@ -43,6 +43,9 @@ class FieldAdapter(
             itemView.setOnClickListener {
                 val intent = Intent(context, EditActivity :: class.java).apply {
                     putExtra(MyIntentConstants.I_NAME_KEY, item.name)
+                    putExtra(MyIntentConstants.I_LASTNAME_KEY, item.lastname)
+                    putExtra(MyIntentConstants.I_PHONENUMBER_KEY, item.phonenumber)
+                    putExtra(MyIntentConstants.I_DESCRIPTION_KEY, item.description)
                 }
                 context.startActivity(intent)
             }
