@@ -16,16 +16,6 @@
                 android:id="@+id/manual"
                 android:icon="@drawable/manual"
                 android:title="Справочник" />
-        </menu>
-    </item>
-
-    <item android:title="">
-        <menu>
-            <item
-                android:id="@+id/settings"
-                android:icon="@drawable/settingss"
-                android:title="Настройки" />
-            
             <item
                 android:id="@+id/about"
                 android:icon="@drawable/about"

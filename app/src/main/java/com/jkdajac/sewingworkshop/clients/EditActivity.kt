@@ -76,6 +76,7 @@ class EditActivity : AppCompatActivity() {
                     etSHk = etSHk, etSHn = etSHn)
                 Toast.makeText(this,"Имя и фамилия заполнены!", Toast.LENGTH_LONG).show()
                 fieldDatabase.fieldDao().insertField(field)
+                fieldDatabase.fieldDao().updateField(field)
 
 
                 val intent = Intent(this, ClientsActivity::class.java)

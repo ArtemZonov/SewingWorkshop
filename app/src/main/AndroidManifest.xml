@@ -9,17 +9,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SewingWorkshop">
-        <activity android:name=".tamplates.TamplatesActivity"></activity>
-        <activity android:name=".about.AboutActivity" />
-        <activity android:name=".clients.EditActivity" />
-        <activity android:name=".clients.ClientsActivity" />
-        <activity android:name=".manual.RashodTkaneiActivity" />
-        <activity android:name=".manual.FormuliActivity" />
-        <activity android:name=".manual.MerkiActivity" />
-        <activity android:name=".manual.DefektiActivity" />
-        <activity android:name=".manual.PribavkiActivity" />
-        <activity android:name=".manual.ManualActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".settings.SettingsActivity"></activity>
+        <activity
+            android:name=".tamplates.TamplatesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".about.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".clients.EditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".clients.ClientsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manual.RashodTkaneiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manual.FormuliActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manual.MerkiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manual.DefektiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manual.PribavkiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manual.ManualActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -41,9 +41,6 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                     Toast.makeText(this@MainActivity, "Справочник", Toast.LENGTH_SHORT).show()
                 }
-                R.id.settings -> {
-                    Toast.makeText(this@MainActivity, "Настройки", Toast.LENGTH_SHORT).show()
-                }
                 R.id.about -> {
                     Toast.makeText(this@MainActivity, "О приложении", Toast.LENGTH_SHORT).show()
                     val intent = Intent(this, AboutActivity ::class.java)
