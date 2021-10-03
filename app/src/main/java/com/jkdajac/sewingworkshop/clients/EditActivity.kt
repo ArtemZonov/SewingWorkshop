@@ -21,6 +21,7 @@ class EditActivity : AppCompatActivity() {
         setContentView(R.layout.activity_edit)
         getMyIntents()
 
+
         fieldDatabase = AppDatabase.getDatabase(this)
 
         ivSaveData.setOnClickListener {
@@ -75,12 +76,14 @@ class EditActivity : AppCompatActivity() {
                     etSHk = etSHk, etSHn = etSHn)
                 Toast.makeText(this,"Имя и фамилия заполнены!", Toast.LENGTH_LONG).show()
                 fieldDatabase.fieldDao().insertField(field)
+
+
                 val intent = Intent(this, ClientsActivity::class.java)
                 startActivity(intent)
             } else {
                 Toast.makeText(this,"Заполните поля" + "\"Имя\"" + "и" + "\"Фамилия\"", Toast.LENGTH_LONG).show()
             }
-            finish()
+              finish()
         }
 
         }

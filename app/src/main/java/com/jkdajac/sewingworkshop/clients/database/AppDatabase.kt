@@ -13,7 +13,6 @@ import androidx.sqlite.db.SupportSQLiteDatabase
     abstract class AppDatabase : RoomDatabase() {
         abstract fun fieldDao(): FieldDao
 
-
         companion object {
             @Volatile
             private var INSTANCE: AppDatabase? = null
@@ -24,16 +23,14 @@ import androidx.sqlite.db.SupportSQLiteDatabase
                     database.execSQL("CREATE TABLE IF NOT EXISTS `profile`(etDis)")
                 }
             }
-
             fun getDatabase(context: Context): AppDatabase {
                 return INSTANCE ?: synchronized(this) {
                     val instance = Room.databaseBuilder(
                         context.applicationContext,
                         AppDatabase::class.java,
-                        "field_database"
-                    )
-                        .allowMainThreadQueries()
+                        "field_database")
                         .addMigrations(MIGRATION_1_2)
+                        .allowMainThreadQueries()
                         .build()
                     INSTANCE = instance
                     instance

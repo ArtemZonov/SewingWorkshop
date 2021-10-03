@@ -1,9 +1,11 @@
 package com.jkdajac.sewingworkshop.clients
 
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.jkdajac.sewingworkshop.MainActivity
 import com.jkdajac.sewingworkshop.R
@@ -24,6 +26,8 @@ class ClientsActivity : AppCompatActivity(), FieldAdapter.ViewHolder.ItemCallbac
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_clients)
+        initSearchView()
+
 
         fieldList = ArrayList<Field>()
         fieldDatabase = AppDatabase.getDatabase(this)
@@ -55,5 +59,26 @@ class ClientsActivity : AppCompatActivity(), FieldAdapter.ViewHolder.ItemCallbac
         fieldList.clear()
         fieldList.addAll(fieldFromDb)
     }
+
+
+    fun initSearchView(){
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                if (query != null) {
+                    fieldDatabase.fieldDao().searchDatabase(query)
+                }
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                if (newText != null) {
+                    fieldDatabase.fieldDao().searchDatabase(newText)
+                }
+                return true
+            }
+        })
+    }
+
+
 }
 

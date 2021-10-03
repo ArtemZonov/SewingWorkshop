@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.field_item.view.*
 
 class FieldAdapter(
     val contextA: Context,
-    private val fieldList: List<Field>,
+     val fieldList: List<Field>,
     val callback: ViewHolder.ItemCallback
 ) : RecyclerView.Adapter<FieldAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder { val context = contextA
@@ -32,7 +32,6 @@ class FieldAdapter(
         holder.deleteItem?.setOnClickListener {
             callback.deleteItem(position)
         }
-
     }
     class ViewHolder(itemView: View, contextV : Context) : RecyclerView.ViewHolder(itemView) {
         private val tvItemName : TextView = itemView.findViewById(R.id.tvItemName)
@@ -91,6 +90,7 @@ class FieldAdapter(
         var deleteItem: ImageView? = null
 
 
+
         init {
             name = itemView.tvItemName
             description = itemView.etDescription
@@ -98,16 +98,19 @@ class FieldAdapter(
             phonenumber = itemView.etPhoneNumber
             deleteItem = itemView.ivItemDelete
 
+
         }
 
         interface ItemCallback {
             fun deleteItem(index: Int)
+
 
         }
     }
     override fun getItemCount(): Int {
         return fieldList.size
     }
+
 }
 
 
